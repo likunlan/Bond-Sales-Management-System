@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="demo.citi.pojo.LoginInfo" alias="LoginInfo"></typeAlias>
+		<typeAlias type="demo.citi.pojo.SaleInfo" alias="SaleInfo"></typeAlias>
+		<typeAlias type="demo.citi.pojo.SelectInfo" alias="SelectInfo"></typeAlias>
+	</typeAliases>
+	<mappers>
+		<mapper resource="LoginMapper.xml" />
+	</mappers>
+</configuration>

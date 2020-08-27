@@ -1,0 +1,6 @@
+projectKey=demo.citi:spring_mybatis_mysql
+serverUrl=http://localhost:9000
+serverVersion=6.7.7.38951
+dashboardUrl=http://localhost:9000/dashboard/index/demo.citi:spring_mybatis_mysql
+ceTaskId=AXQuny7QR7_5knFSapuM
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXQuny7QR7_5knFSapuM

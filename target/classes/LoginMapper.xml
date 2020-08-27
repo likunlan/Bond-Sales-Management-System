@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.citi.dao.LoginMapper">
+	<select id="selectUser" parameterType="LoginInfo" resultType="boolean">
+	select count(*) from test where password=#{password} and account=#{account}
+	</select>
+	<insert id="insertSaleData" parameterType="SaleInfo">
+		insert into saleTable(salename,salekind,date,money) values(#{saleName},#{saleKind},#{date},#{money})
+	</insert>
+	<select id="selectSaleDate" parameterType="SelectInfo" resultType="SaleInfo">
+		select * from saleTable where salename=#{saleName} and salekind=#{saleKind} and date between #{startDate} and #{endDate}
+	</select>
+</mapper>
